@@ -50,7 +50,7 @@ exports.register = async (req, res) => {
       } catch (error) {
         console.error("RabbitMQ Error (auth_events):", error.message);
       }
-    }, 5000);
+    }, 3000);
 
 
     res.status(201).json({ message: "User registered successfully" });
