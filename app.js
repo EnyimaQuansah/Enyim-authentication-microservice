@@ -18,7 +18,7 @@ app.use(bodyParser.json({ limit: "5mb" }));
 // Database Connection
 connectDB();
 
-// Routes
+
 app.use("/auth", authRoutes);
 app.use("/auth/profile", profileRoutes);
 
